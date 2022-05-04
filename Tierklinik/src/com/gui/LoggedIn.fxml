@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: RGB(204,255,229);" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gui.ControllerLoggedIn">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="68.0" style="-fx-background-color: RGB(0,255,128);">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="103.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/29a0fc3b256f413e830e2a07c181897f.png" />
+               </image>
+            </ImageView>
+         </children></VBox>
+      <ImageView fx:id="imageView" fitHeight="380.0" fitWidth="380.0" layoutX="115.0" layoutY="16.0" opacity="0.4">
+         <image>
+            <Image url="@images/kedi-kopek-bayrakli-veteriner.png" />
+         </image>
+         <effect>
+            <Glow />
+         </effect>
+      </ImageView>
+      <Button fx:id="loggedinaddButton" layoutX="245.0" layoutY="89.0" mnemonicParsing="false" onAction="#addTiereButtonAction" text="Klinik Registrierung" />
+      <Button fx:id="zuruckButton" layoutX="534.0" layoutY="348.0" mnemonicParsing="false" onAction="#zuruckButtonAction" text="Zuruck" />
+      <Button fx:id="loggedinshowButton" layoutX="240.0" layoutY="145.0" mnemonicParsing="false" onAction="#showTiereButtonAction" text="View Registrierungen" />
+   </children>
+</AnchorPane>
